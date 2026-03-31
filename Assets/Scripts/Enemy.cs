@@ -2,12 +2,17 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Vector3 moveDirection;
+    private Vector3 _moveDirection;
     private int _speed = 2;
 
-    void Update()
+    private void Update()
     {
-        transform.Translate(moveDirection * _speed*Time.deltaTime,Space.World);
-        transform.rotation = Quaternion.LookRotation(moveDirection);
+        transform.Translate(_moveDirection * _speed*Time.deltaTime,Space.World);
+        transform.rotation = Quaternion.LookRotation(_moveDirection);
+    }
+
+    public void ChangeMoveDirection(Vector3 direction)
+    {
+        _moveDirection = direction;
     }
 }

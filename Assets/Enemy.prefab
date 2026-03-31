@@ -1899,7 +1899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a64f8c343710164f873766894317abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  moveDirection: {x: 0.82785857, y: 0, z: 0.5609369}
 --- !u!1 &8455835464817115232
 GameObject:
   m_ObjectHideFlags: 0
